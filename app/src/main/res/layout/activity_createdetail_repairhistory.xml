@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_customer_name"
+        android:layout_gravity="center_horizontal"
+        android:hint="ชื่อลูกค้า :"
+        android:layout_margin="10dp"
+        android:background="#dddddd" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_motorcycle_brand"
+        android:layout_gravity="center_horizontal"
+        android:hint="ชื่อรุ่นของรถ :"
+        android:layout_margin="10dp"
+        android:background="#dddddd" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_color"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="#dddddd"
+        android:gravity="left"
+        android:hint="สี :" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_license_plate"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="#dddddd"
+        android:hint="หมายเลขทะเบียน :" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ประเภท"
+        android:id="@+id/txt_category"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:background="#dddddd"
+        android:id="@+id/radiogroup_category">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/radio_classic"
+            android:text="classic"
+            android:checked="false" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/radio_bigbike"
+            android:text="bigbike"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/radio_enduro"
+            android:text="enduro"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/radio_other"
+            android:text="other"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_phonenumber"
+        android:layout_gravity="center_horizontal"
+        android:hint="เบอร์โทร :"
+        android:layout_margin="10dp"
+        android:background="#dddddd" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/edt_detail"
+        android:hint="อาการเสียของรถ :"
+        android:gravity="top"
+        android:background="#ddd"
+        android:layout_margin="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="Select"
+            android:id="@+id/btn_pickimg1"
+            android:onClick="btn_pickimg1" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/img1"
+            android:background="#ddd"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="select"
+            android:id="@+id/btn_pickimg2"
+            android:onClick="btn_pickimg2" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/img2"
+            android:background="#ddd"
+            android:layout_marginBottom="10dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="Select"
+            android:id="@+id/btn_pickimg3"
+            android:onClick="btn_pickimg3" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/img3"
+            android:background="#ddd"
+            android:nestedScrollingEnabled="false" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="select"
+            android:id="@+id/btn_pickimg4"
+            android:onClick="btn_pickimg4" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/img4"
+            android:background="#ddd" />
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:id="@+id/btn_submit"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:onClick="btn_submit" />
+</LinearLayout>
+</ScrollView>

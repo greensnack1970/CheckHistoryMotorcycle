@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gr33nsn4ck.checkhistorymotorcycle">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SearchHistoryActivity"
+            android:label="ค้นหาประวัติการซ่อมจากหมายเลขทะเบียน" />
+
+        <activity
+            android:name=".CreateDetailRepairActivity"
+            android:label="เพิ่มประวัติการซ่อม" />
+
+        <activity
+            android:name=".CategoryMotorcycleActivity"
+            android:label="เลือกดูลิสการซ่อมตามประเภทของรถ" />
+
+        <activity
+            android:name=".ShowHistoryOfLicensePlate"
+            android:label="ลิสประวัติการซ่อมจากเลขเลขทะเบียน" />
+
+        <activity
+            android:name=".ShowSeparateCategoryListActivity"
+            android:label="แสดงลิสตามประเภทรถ" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="เข้าสู่ระบบ" />
+
+        <activity
+            android:name=".RegisterActivity"
+            android:label="สมัครสมาชิก" />
+
+        <activity
+            android:name=".ShowDetailOfRepair"
+            android:label="แสดงข้อมูลการซ่อม" />
+
+        <activity
+            android:name=".EditInformationAfterRepairedActivity"
+            android:label="แก้ไขประวัติการซ่อม" />
+
+        <activity
+            android:name=".ShowCustomersListActivity"
+            android:label="แสดงลิสลูกค้า" />
+
+        <activity
+            android:name=".CreateNewCustomerActivity"
+            android:label="เพิ่มข้อมูลลูกค้า" />
+
+        <activity
+            android:name=".ShowCustomerInformationActivity"
+            android:label="แสดงข้อมูลลูกค้า  " />
+
+        <activity
+            android:name=".EditCustomerInformationActivity"
+            android:label="แก้ไขข้อมูลลูกค้า" />
+
+        <activity
+            android:name=".BackupDatabaseActivity"
+            android:label="สำรองข้อมูล" />
+
+        <activity
+            android:name=".BackupSigninActivity"
+            android:label="เข้าสู่ระบบ Backup" />
+
+        <activity
+            android:name=".BackupSignUpActivity"
+            android:label="ลงทะเบียนใช้งานระบบสำรองข้อมูล" />
+
+        <activity
+            android:name=".ShowMotrcyclesListActivity"
+            android:label="แสดงลิสมอเตอร์ไซค์ของลูกค้า" />
+
+        <activity
+            android:name=".CreateNewMotorcyclesActivity"
+            android:label="เพิ่มข้อมูลมอเตอร์ไซค์" />
+
+        <activity
+            android:name=".ShowMotorcycleInformationActivity"
+            android:label="แสดงข้อมูลรถ" />
+
+    </application>
+
+</manifest>

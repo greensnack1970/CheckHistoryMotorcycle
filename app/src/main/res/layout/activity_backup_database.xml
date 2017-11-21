@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gr33nsn4ck.checkhistorymotorcycle.BackupDatabaseActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BackupDatabaseFile"
+        android:id="@+id/btn_backupdb"
+        android:onClick="btn_backupdb" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SyncDatabase"
+        android:id="@+id/button"
+        android:onClick="btn_pullallfiles" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LogOut"
+        android:onClick="btn_bklogout" />
+
+
+</LinearLayout>
